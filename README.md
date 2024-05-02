@@ -53,6 +53,7 @@ For more information, check out the table overview for models.
 You always have to upload feature data, if there is no groundtruth data you will receive a prediction for 
 your drug combination in tsv format with "0" meaning a predicted approved and "1" meaning a predicted adverse combination.
 BRAUCHE NOCH STANDARD
+Please keep in mind that before receiving a predicition on feature data for a model you have to run said model with groundtruth and feature data at least once, so that the corresponding joblib file is created.
 
 If there is feature data and groundtruth data, the chosen models will be evaluated and you will receive a prediction 
 on X_test as a tsv and a pdf with confusion matrizes and different evluation scores.
@@ -77,9 +78,7 @@ This decides if the train test split will be stratified or not.
 
 7. Scaler Yes/No(Default)
 
-This decides if the data will be scaled before hyperparameter tuning and training. 
-
-
+This decides if the data will be scaled before hyperparameter tuning and training.
 
 # Table Overview for models
 
